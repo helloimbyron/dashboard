@@ -115,7 +115,7 @@ let updateData2 = () => {
   //   segundo.innerHTML = mensaje_usuarios;
   //   tercero.innerHTML = mensaje_clientes;
   //   cuarto.innerHTML = mensaje_ventas;
-  };
+  }
 
   // Refactorización.
   {
@@ -143,12 +143,10 @@ let updateData2 = () => {
     for (const objeto of cambios) {
       let { valor_previo, valor_actual, mensaje_tiempo } = objeto;
 
-      let clase = cambiarClase(porcentaje);
-
       let porcentaje = convertirPorcentaje(valor_actual, valor_previo);
       porcentaje = Math.round(porcentaje);
+      let clase = cambiarClase(porcentaje);
       porcentaje = cambiarSigno(porcentaje);
-
       let mensaje = generarMensaje(clase, porcentaje, mensaje_tiempo);
 
       if (contador < cambios.length) {
@@ -156,7 +154,7 @@ let updateData2 = () => {
         contador++;
       };
     };
-  };
+  }
 
 
 
