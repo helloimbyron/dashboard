@@ -1,3 +1,6 @@
+
+// Actividad en clase 3.
+
 let localData = () => {
   let chartRef1 = document.getElementById("chart-bars").getContext("2d");
 
