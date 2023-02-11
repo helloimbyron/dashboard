@@ -156,8 +156,6 @@ let updateData2 = () => {
     };
   }
 
-
-
 };
 
 runScripts();
